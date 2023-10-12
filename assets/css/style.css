@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* Top Head Section Start */
+.tophead{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #05571d;
+}
+.tophead ul li{
+    color: #fff;
+    margin: 0px 3px;
+    display: inline-block;
+}
+.tophead ul a{
+    color: #c2e4c6;
+}
+/* Top Head Section End */
+/* Header Section Start */
+header{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    line-height: 100px;
+    padding: 0px 100px;
+    background: #3fba64 ;
+}
+header h1{
+    font-size: 50px;
+    margin-right: 20px;
+}
+header h1, header h3{
+    display: inline-block;
+}
+/* Header Section End */
+/* Nav Section Start */
+nav{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 100px;
+    background: #83e3a0;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+nav ul li a{
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-size: 105%;
+    transition: 0.3s linear;
+}
+/* Nav Section End */
+/* Content Section Start */
+section{
+    width: 100%;
+    padding: 0px 100px;
+}
+section main{
+    width: 80%;
+    float: left;
+    padding: 20px 30px;
+}
+.para1{
+    padding: 10px;
+    text-align: justify;
+}
+.para2{
+    padding-left: 40px;
+    text-align: justify;
+}
+.para3{
+    padding: 10px;
+    text-align: justify;
+}
+.content p{
+    padding-left: 5px;
+}
+#text{
+    padding-top: 15px
+}
+.para4{
+    padding: 10px;
+    text-align: justify;
+}
+.para5{
+    padding: 10px;
+    text-align: justify;
+}
+section main ul{
+    padding-left: 40px;
+}
+#text2{
+    padding-top: 15px
+}
+.para6{
+    padding: 10px;
+    text-align: justify;
+}
+section main h4{
+    padding: 10px;
+}
+section main ol{
+    padding-left: 40px;
+}
+.para7{
+    padding: 10px 40px;
+    text-align: justify;
+}
+#unorder{
+    padding: 10px 40px;
+}
+section aside{
+    width: 20%;
+    float: right;
+    padding: 20px 15px;
+    background: #b9dbbe;
+}
+#check{
+    display: none;
+}
+.content{
+    display: none;
+}
+#check:checked ~ .content{
+    display: block;
+}
+label{
+    display: inline-block;
+    color: #3fba64;
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 5px;
+}
+aside ul li{
+    font-weight: 600;
+    list-style: none;
+}
+aside ul li ul li{
+    padding-left: 20px;
+    font-weight: normal;
+}
+/* Content Section End */
+/* Footer Section Start */
+footer{
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    padding: 10px 100px;
+    background: #05571d;
+}
+footer .links{
+    width: 33%;
+    float: left;
+}
+footer .follow{
+    width: 33%;
+    float: left;
+}
+footer .copy{
+    width: 34%;
+    text-align: right;
+    float: right;
+}
+.links ul li{
+    list-style: none;
+}
+.follow ul li{
+    list-style: none;
+}
+.copy ul li{
+    list-style: none;
+}
+/* Footer Section End */
+/* Media Query Start */
+@media screen and (max-width:991px){
+    .tophead, footer{
+        height: auto;
+        padding: 10px;
+    }
+    .tophead ul li{
+        display: block;
+    }
+    header,nav{
+        text-align: center;
+        padding: 0px 100px;
+    }
+    section{
+        padding: 0px 0px 0px 10px;
+
+    }
+}
+@media screen and (max-width:767px) {
+    section main, section aside{
+        float: none;
+        width: 100%;
+        padding: 0px;
+    } 
+    footer .links, footer .follow, footer .copy{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and(max-width:575px) {
+    header{
+        line-height: normal;
+    }
+    header h1, header h3{
+        padding-top: 10px;
+        display: block;
+    }
+}
+/* Media Query End */
